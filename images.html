@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Images</title>
+    <p>
+      <a class="navbarhome" href="/java.html"
+        ><button class="navbarhome" type="button">🏠Home</button></a
+      >
+      <a class="navbarunsplash" href="https://www.unsplash.com" target="_blank"
+        ><button class="navbarunsplash" type="button">📸unsplash</button></a
+      >
+      <p class="time" id="current-time" ></p>
+    </p>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 350px;
+        border-radius: 20px;
+        border: 3px solid white;
+      }
+      .bg-image :hover {
+        width: 389px;
+        border: 3px solid orange;
+      }
+      .navbarhome {
+        border-radius: 15px;
+        font-family: sans-serif;
+        border-style: hidden;
+        font-size: large;
+        text-decoration: none;
+      }
+      .navbarhome :hover {
+        color: red;
+        font-size: larger;
+        font-weight: bold;
+        background-color: rgba(236, 224, 34, 0.4);
+        border-bottom: 3px solid orangered;
+        border-top: 3px solid orangered;
+      }
+      .navbarunsplash {
+        border-radius: 15px;
+        font-family: sans-serif;
+        border-style: hidden;
+        font-size: large;
+        text-decoration: none;
+        margin-left: 7px;
+      }
+      .navbarunsplash :hover {
+        color: red;
+        font-size: larger;
+        font-weight: bold;
+        background-color: rgba(236, 224, 34, 0.4);
+        border-bottom: 3px solid orangered;
+        border-top: 3px solid orangered;
+      }
+      .time {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a class="bg-image" href="bg-image.jpg"
+        ><img src="bg-image.jpg" alt="background image"
+      /></a>
+    </p>
+  </body>
+  <script>
+    let time = document.getElementById('current-time')
+
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    },10)
+  </script>
+</html>

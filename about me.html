@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>about me</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about me</title>
+    <style>
+      .home {
+        border-radius: 15px;
+        border-style: hidden;
+        font-size: large;
+      }
+      .home :hover {
+        color: red;
+        font-size: larger;
+        font-weight: bold;
+        background-color: rgba(236, 224, 34, 0.4);
+        border-bottom: 3px solid orangered;
+        border-top: 3px solid orangered;
+      }
+      .emailme {
+        border-radius: 15px;
+        border-style: hidden;
+        font-size: large;
+        margin-left: 7px;
+      }
+      .emailme :hover {
+        color: red;
+        font-size: larger;
+        font-weight: bold;
+        background-color: rgba(236, 224, 34, 0.4);
+        border-bottom: 3px solid orangered;
+        border-top: 3px solid orangered;
+      }
+      .about {
+        color: white;
+        font-size: large;
+      }
+      h1 {
+        color: white;
+      }
+      h2 {
+        color: white;
+      }
+      h3 {
+        color: white;
+      }
+      h4 {
+        color: white;
+      }
+      h5 {
+        color: white;
+      }
+      h6 {
+        color: white;
+      }
+      .time {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a class="home" href="java.html">
+        <button class="home" type="button">🏠Home</button>
+      </a>
+      <a class="emailme" href="mailto:nitinipun2110@gmail.com"
+        ><button class="emailme" type="button">📧Email me</button></a
+      >
+      <p class="time" id="current-time" ></p>
+    </p>
+    <h1>about me</h1>
+    <p class="about">
+      my name is nitin kamal, am learning coding, i am 13 years old
+    </p>
+  </body>
+  <script>
+    let time = document.getElementById('current-time')
+
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+   },10)
+  </script>
+</html>
